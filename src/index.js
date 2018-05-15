@@ -12,7 +12,7 @@ import { InMemoryCache } from 'apollo-cache-inmemory'
 const httpLink = new HttpLink({ uri: 'http://localhost:4000' })
 
 const client = new ApolloClient({
-  client: httpLink,
+  link: httpLink,
   cache: new InMemoryCache()
 })
 
